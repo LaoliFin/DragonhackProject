@@ -7,6 +7,7 @@ import { EventPageComponent } from './components/event-page/event-page.component
 import { CultureComponent } from './components/culture/culture.component';
 //import { AgmCoreModule } from '@agm/core';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { MapaComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,8 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     RouterModule.forRoot([
       { path: "culture", component: CultureComponent },
       { path: "eventpage", component: EventPageComponent },
+      { path: "map", component: MapaComponent}
+      //dodaj pot do mojega url
     ]),
   ],
   providers: [],
