@@ -23,7 +23,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
     //LeafletModule
     /*AgmCoreModule.forRoot({
       apiKey: ''
-    })*/,
+    })*/
     RouterModule.forRoot([
       { path: "culture", component: CultureComponent },
       { path: "eventpage", component: EventPageComponent },
