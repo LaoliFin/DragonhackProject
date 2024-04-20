@@ -1,11 +1,11 @@
+require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
 const app = express();
 const cors = require("cors");
 
-// Tukaj dovolimo, da se REST servisi kličejo iz katerega koli računalnika "*"
-// Če želimo varnost, potem v origin napišemo IP ali DN od strežnika, kjer se nahaja FrontEnd app.
+
 app.use(cors( {
     origin: '*', // Allow requests from all origins
     methods: 'GET, POST, PUT, DELETE', // Allow all HTTP methods
@@ -16,6 +16,11 @@ app.use((err, req, res, next) => {
     if (err.name === "UnauthorizedError")
       res.status(401).json({ message: err.message });
   });
+
+
+//povezava z mongoose prek db.js
+require("./api/models/db.js");
+
 
 const port = process.env.PORT || 3000;
 
