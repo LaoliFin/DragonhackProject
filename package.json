@@ -15,7 +15,7 @@
 	"scripts": {
 		"start": "node server.js"
 	},
-	"name": "DragonhackProject",
+	"name": "HowToSlovenc",
 	"description": "Projekt za DragonHack 2024",
 	"version": "1.0.0",
 	"main": "server.js",
