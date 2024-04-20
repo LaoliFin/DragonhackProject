@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { OgrodjeComponent } from './components/ogrodje/ogrodje.component';
 import { EventPageComponent } from './components/event-page/event-page.component';
 import { CultureComponent } from './components/culture/culture.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CultureComponent } from './components/culture/culture.component';
     RouterModule.forRoot([
       { path: "culture", component: CultureComponent },
       { path: "eventpage", component: EventPageComponent },
+      { path: "homepage", component: HomepageComponent },
     ]),
   ],
   providers: [],
