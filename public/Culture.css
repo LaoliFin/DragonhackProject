@@ -1,3 +1,8 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #d8dce2;
+}
+
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -57,7 +62,7 @@
 }
 
 #learn {
-    background-color: #d8dce2;
+    background-color: #9fb1d1;
     color: black;
 }
 
@@ -75,11 +80,15 @@
 }
 
 .scrollspy {
-    margin: 20px;
+    margin-top: 80px;
 }
 
 #pagenav {
-
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: #d8dce2;
+    z-index: 1;
 }
 
 .nav-item {
