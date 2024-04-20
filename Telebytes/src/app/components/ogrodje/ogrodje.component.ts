@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-ogrodje',
+  selector: 'ogrodje',
   templateUrl: './ogrodje.component.html',
   styleUrls: ['./ogrodje.component.css']
 })
