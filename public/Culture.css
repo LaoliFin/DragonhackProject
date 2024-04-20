@@ -2,8 +2,13 @@
     background-color: transparent;
     width: 300px;
     height: 200px;
+    margin-bottom: 20px;
 }
 
+.card {
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
 /*Position the front and back side */
 .flip-card-inner {
     position: relative;
@@ -46,11 +51,59 @@
     color: white;
 }
 
+#playlist {
+    background-color: #14233d;
+    color: white;
+}
+
+#learn {
+    background-color: #d8dce2;
+    color: black;
+}
+
+#learnCard {
+    width: 100%;
+}
+
 .categories {
-    margin: 20px;
+    margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     border-radius: 20px;
     font-weight: bold;
 }
+
+.scrollspy {
+    margin: 20px;
+}
+
+#pagenav {
+
+}
+
+.nav-item {
+    border-radius: 10px;
+    background-color: #9fb1d1;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.nav-item a {
+    color: black;
+}
+
+.nav-item:hover {
+    background-color: #14233d;
+}
+
+.nav-item:hover a {
+    color: white;
+}
+
+.nav-item:active {
+    background-color: #14233d;
+}
+
