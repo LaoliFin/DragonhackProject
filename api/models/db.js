@@ -1,21 +1,17 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-//Lokalna DB
-//var dbURI = "mongodb://127.0.0.1/Hedgebit";
-
-//Mongo Atlas
-//dbURI = "mongodb+srv://Hedgebit:Hedgebit@cluster0.4k4cju0.mongodb.net/Hedgebit?retryWrites=true&w=majority";
+//mongodb+srv://tele:<tele>@telebytes.vaczzy9.mongodb.net/
 
 // MongoDB Atlas podatkovna baza v oblaku
 if (process.env.NODE_ENV === "production") {
   dbURI = process.env.MONGODB_ATLAS_URI;
   // Lokalna Docker podatkovna baza
 } else if (process.env.NODE_ENV === "test") {
-  dbURI = "mongodb://sp-mongo-db/Hedgebit"; //SPREMENI URI
+  dbURI = "mongodb+srv://tele:tele@telebytes.vaczzy9.mongodb.net"; //SPREMENI URI
 }
 
-
+//mongodb+srv://tele:<tele>@telebytes.vaczzy9.mongodb.net/
 mongoose.connect(dbURI);
 
 mongoose.connection.on("connected", () =>
