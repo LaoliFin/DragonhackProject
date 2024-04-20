@@ -9,7 +9,7 @@ import { EventCardComponent } from './components/event-card/event-card.component
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 //import { AgmCoreModule } from '@agm/core';
-//import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
   ],
   imports: [
     BrowserModule,
-    //LeafletModule
+    LeafletModule,
     /*AgmCoreModule.forRoot({
       apiKey: ''
     })*/

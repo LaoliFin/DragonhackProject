@@ -1,12 +1,13 @@
-import {Component} from '@angular/core';
+/*import {Component} from '@angular/core';
 import * as Leaflet from 'leaflet';
+//import { Map } from 'leaflet';
 
 Leaflet.Icon.Default.imagePath = 'assets/';
 
 @Component({
-selector: 'app-mapa',
-templateUrl: './mapa.component.html',
-styleUrls: ['./mapa.component.css']
+selector: 'app-map',
+templateUrl: './map.component.html',
+styleUrls: ['./map.component.css']
 })
 export class MapaComponent {
 
@@ -63,7 +64,7 @@ export class MapaComponent {
         });
     }
 
-    mapClicked($event: any) {
+    mapClicked($event: Leaflet.LeafletMouseEvent) {
         console.log($event.latlng.lat, $event.latlng.lng);
     }
 
@@ -75,3 +76,37 @@ export class MapaComponent {
         console.log($event.target.getLatLng());
     }
 }
+*/
+import { Component } from '@angular/core';
+import * as L from 'leaflet';
+
+@Component({
+  selector: 'app-map',
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.css']
+})
+export class MapaComponent {
+
+ /* constructor() { }
+
+  ngOnInit(): void {
+    this.initMap();
+  }
+
+  private initMap(): void {
+    
+    const map = L.map('map').setView([46.0569, 14.5058], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([46.0569, 14.5058]).addTo(map)
+      .bindPopup('Ljubljana')
+      .openPopup();
+  }*/
+    FRI_LAT = 46.052076;
+    FRI_LNG = 14.466812;
+    
+}
+
