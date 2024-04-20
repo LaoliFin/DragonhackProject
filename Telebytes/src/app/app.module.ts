@@ -7,6 +7,7 @@ import { EventPageComponent } from './components/event-page/event-page.component
 import { CultureComponent } from './components/culture/culture.component';
 import { EventCardComponent } from './components/event-card/event-card.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 //import { AgmCoreModule } from '@agm/core';
 //import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
@@ -14,6 +15,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
   declarations: [
 
     OgrodjeComponent,
+    NavigationComponent,
     CultureComponent,
     EventPageComponent,
     EventCardComponent
@@ -25,9 +27,9 @@ import { HomepageComponent } from './components/homepage/homepage.component';
       apiKey: ''
     })*/
     RouterModule.forRoot([
+      { path: "", component: HomepageComponent },
       { path: "culture", component: CultureComponent },
       { path: "eventpage", component: EventPageComponent },
-      { path: "homepage", component: HomepageComponent },
     ]),
   ],
   providers: [],
