@@ -1,4 +1,5 @@
-<nav id="navbar-example2" class="navbar">
+<body>
+<nav id="pagenav" class="navbar justify-content-center">
   <ul class="nav nav-pills">
     <li class="nav-item">
       <a class="nav-link" href="#food">FOOD</a>
@@ -11,33 +12,40 @@
     </li>
   </ul>
 </nav>
-
-<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-  <h4 id="food">FOOD</h4>
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  <h4 id="playlist">PLAYLIST</h4>
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  <h4 id="learn">LEARN SLOVENE</h4>
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+<div
+  data-bs-spy="scroll"
+  data-bs-target="#navbar"
+  data-bs-smooth-scroll="true"
+  class="scrollspy"
+  tabindex="0"
+>
+  <h4 id="food" class="categories">FOOD</h4>
+  <div class="flip-card" style="width: 18rem">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="./img/potica.jpg" alt="Potica" class="pic-normal">
+      </div>
+      <div class="flip-card-back">
+        <img src="..." alt="Burek" class="pic-flipped">
+        <h1>Potica</h1>
+        <p>:D</p>
+        <p>We love</p>
       </div>
     </div>
+  </div>
+  <h4 id="playlist" class="categories">PLAYLISTS</h4>
+  <div class="card" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">TITLE OF PLAYLIST</h5>
+      <p class="card-text">This is where the playlist will be</p>
+    </div>
+  </div>
+  <h4 id="learn" class="categories">LEARN SLOVENE</h4>
+  <div class="card" id="learnCard">
+    <div class="card-body">
+      <h5 class="card-title">GAME</h5>
+      <p class="card-text">Something to quiz the user</p>
+      <a href="#" class="btn btn-primary">Check answers</a>
+    </div>
+  </div>
 </div>

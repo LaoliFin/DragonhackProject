@@ -1,7 +1,32 @@
-<div class="card">
-	<div class="card-body">
-		<h5 class="event-name">Event</h5>
-		<h6 class="event-location">Location</h6>
-		<p class="event-description">Here's some basic information about the event</p>
-	</div>
+<div>
+	<details>
+		<summary>Filters</summary>
+		<!-- tu lahko uporabnik filtrira dogodke po razl. parametrih (tip, čas...) -->
+		<form>
+			<h6>Type:</h6>
+			<label>
+				Party
+				<input name="type" type="checkbox" value="party" />
+			</label>
+			<label>
+				Hangout
+				<input name="type" type="checkbox" value="hangout" />
+			</label>
+			<label>
+				Concert
+				<input name="type" type="checkbox" value="concert" />
+			</label>
+			<label>
+				Picnic
+				<input name="type" type="checkbox" value="picnic" />
+			</label>
+			
+			<h6>Date:</h6>
+			<input name="date" type="date" />
+
+			<button type="reset" >Reset</button>
+			<button type="submit" >Confirm</button>
+		</form>
+	</details>
+	<event-card></event-card>
 </div>
