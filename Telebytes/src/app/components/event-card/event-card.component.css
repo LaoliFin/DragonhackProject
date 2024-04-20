@@ -17,3 +17,23 @@
     margin-left: 50%;
    
 }
+
+#formContainer {
+    display: none;
+    margin-top: 4%;
+}
+
+.comment {
+    height: 50%;
+    width: 50%;
+}
+
+#addText {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+}
+
+#btn-close {
+    margin-bottom: 50%;
+}
