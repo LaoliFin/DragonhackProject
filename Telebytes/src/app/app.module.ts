@@ -5,13 +5,15 @@ import { RouterModule } from '@angular/router';
 import { OgrodjeComponent } from './components/ogrodje/ogrodje.component';
 import { EventPageComponent } from './components/event-page/event-page.component';
 import { CultureComponent } from './components/culture/culture.component';
+import { EventCardComponent } from './components/event-card/event-card.component';
 
 @NgModule({
   declarations: [
     
     OgrodjeComponent,
     CultureComponent,
-    EventPageComponent
+    EventPageComponent,
+    EventCardComponent
   ],
   imports: [
     BrowserModule,
