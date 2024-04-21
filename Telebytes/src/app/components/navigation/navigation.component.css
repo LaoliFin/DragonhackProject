@@ -1,7 +1,19 @@
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+#slika {
+    margin-top: 0%;
+    margin-right: 75%;
+}
 #navigation {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    width: 100vw; /* Full width */
+    height: 18%;
     background-color: #d8dce2;
     z-index: 1;
 }
@@ -10,10 +22,13 @@
     border-radius: 10px;
     background-color: #9fb1d1;
 	color: black;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
+    margin-top: -15%;
+    height: 50%;
     font-weight: bold;
-    transition: 0.2s;
+    /*transition: 0.2s;*/
+    font-family: "Kanit", sans-serif; /* Applying Kanit font */
 }
 
 .btn, #button {
