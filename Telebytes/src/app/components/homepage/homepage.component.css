@@ -8,33 +8,34 @@
 
 #slika {
     width:  100%;
-    height: 100vh;
+    height: 110%;
     position: fixed;
-    top: 20%;
+    top: -10%;
     left: 0;
-    z-index: 1; 
+    z-index: -2; 
 }
 
 .text-container {
     position: absolute;
-    top: 700%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
+    top: 60%; /* Adjust as needed */
+    left: 49%; /* Adjust as needed */
     transform: translate(-50%, -50%);
-    font-size: 80px;
+    font-size: 100px;
     color: white;
     border-radius: 5px;
     font-family: "Oswald";
     font-weight: 700px;
     font-style: normal;
-    z-index: 2;
+    z-index: -1;
   }
   #aboutUs.card {
     width: 50%;
-    background-color: rgba(159, 177, 209, 0.5);
-    padding: 15px;
+    background-color: rgba(159, 177, 209, 0.7);
+    padding: 25px;
     position: relative;
-    margin-left: 30%;
+    margin-left: 25%;
     z-index: 2;
+    color: white;
   }
   
 
@@ -53,6 +54,8 @@
 
   #contact {
     margin-top: 5%;
+    margin-right: 7%;
+    color: white;
   }
 .row {
     display: inline;
