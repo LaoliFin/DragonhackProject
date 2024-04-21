@@ -1,7 +1,7 @@
 require('dotenv').config();
 const mongoose = require("mongoose");
-const crypto = require("crypto");
-const jwt = require("jsonwebtoken");
+//const crypto = require("crypto");
+//const jwt = require("jsonwebtoken");
 
 const userSchema = new mongoose.Schema({
     username: { 

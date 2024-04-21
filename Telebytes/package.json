@@ -23,6 +23,8 @@
     "angular-oauth2-oidc": "^17.0.2",
     "firebase": "^10.11.0",
     "firebaseui": "^6.1.0",
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12",
     "leaflet": "^1.9.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"

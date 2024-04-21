@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://allevents.in",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}
