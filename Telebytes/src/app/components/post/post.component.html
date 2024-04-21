@@ -1,0 +1,15 @@
+<div id="comment">
+    <button (click)="showForm()" id="add">ADD</button>
+    <div id="addText" [style.display]="isFormVisible ? 'block' : 'none'">
+      <!--<form (ngSubmit)="saveForm()">-->
+      <button type="button" id="cls" aria-label="Close" (click)="showForm()">
+        OK
+      </button>
+      <label for="commentName"></label>
+      <!--<input type="text" name="commentName" id="commentName" 
+					placeholder="Comment..." [ngModelOptions]="{ standalone: true }"
+					[(ngModel)]="newComment.name">-->
+
+      <!--</form>-->
+    </div>
+</div>
