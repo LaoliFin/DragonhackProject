@@ -6,6 +6,7 @@ var ctrlPost = require('../controllers/postController');
 
 //url-ji za objave
 router.get('/events', ctrlPost.displayEventPosts);
+router.get('/music', ctrlPost.displayMusicPosts);
 
 
 router.put('/like/:id', ctrlPost.plusLikes);

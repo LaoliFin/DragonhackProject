@@ -12,6 +12,17 @@ const displayEventPosts = async(req, res) => {
     }
 };
 
+const displayMusicPosts = async(req, res) => {
+    // prikaz objav iz baze
+    try {
+        var posts = [];
+        posts = await PostModel.find({category: "Music"}).sort({upvotes : -1}).exec();
+        res.status(200).json(posts);
+    } catch (err) {
+        res.status(500).json({message: err.message});
+    }
+};
+
 const plusLikes = async(req, res) => {
     // prikaz objav iz baze
     console.log(req.params.id);
@@ -47,6 +58,7 @@ const minusLikes = async(req, res) => {
 
 module.exports = {
     displayEventPosts,
+    displayMusicPosts,
     plusLikes,
     minusLikes,
 };

@@ -19,6 +19,13 @@ export class PostsService {
       .pipe(retry(1), catchError(this.handleError));
   }
 
+  public getMusicPosts(): Observable<Post[]> {
+    const url: string = `${this.apiUrl}/music`;
+    return this.http
+      .get<Post[]>(url)
+      .pipe(retry(1), catchError(this.handleError));
+  }
+
   public likePost(id: string): Observable<void> {
     const url: string = `${this.apiUrl}/like/${id}`;
     return this.http

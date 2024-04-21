@@ -37,7 +37,7 @@
 	color: black;
 	font-weight: bold;
     transition: 0.2s;
-	outline: none;
+	border: none;
 }
 
 .nav-item a {

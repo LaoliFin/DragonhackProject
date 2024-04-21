@@ -6,9 +6,9 @@
     <h6 class="info">{{ post.title }}</h6>
     <p class="description">{{ post.content }}</p>
     <div class="arrow-container">
-      <button class="arrow-button-down" (click) = "increaseLikes(post._id)"></button>
+      <button class="arrow-button" (click) = "increaseLikes(post._id)"></button>
       {{ post.upvotes }}
-      <button class="arrow-button" (click) = "decreaseLikes(post._id)"></button>
+      <button class="arrow-button-down" (click) = "decreaseLikes(post._id)"></button>
     </div>
   </div>
 </div>
