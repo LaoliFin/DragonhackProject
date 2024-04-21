@@ -1,17 +1,12 @@
 # DragonhackProject
 
-PROBLEM: 
-Have you heard someone say: “Slovenians are cold people?” Well, 25% of the students on this University are foreigners, and they think that’s true. After an informal analysis we realized one of their biggest problem is social life integration.
+A website called "HowToSlovenc" which helps foreign students integrate in the social life of Ljubljana. 
+Our two target groups are Slovenians that are extroverted and like to help, and first year foreign students that are looking for new friendships and knowledge.
+HowToSlovenc has four main features: Events, music and language.
+EVENTS: web scraped from a website called allevents.in that has all of the student parties posted (would be ideally with an API in the future but there wasn't one on pages that include Slovenia's events)
+MUSIC: With the help of Spotify and our Editor's pick, we will share playlists of the most listened Slovenian songs, where users can give their suggestions and comments, and add new playlists.
+LANGUAGE: Users can play language games like guess the translation of the Slovenian phrase, where they can learn useful everyday phrases.
 
-SOLUTION:
-A web app that will offer foreign students insider info on the best local places, activities and parties, while teaching them phrases like “” and songs like “”, or letting them know they have to try a potica. Besides the blog, users can make a profile where they will share their social media to connect with locals, save places, events or recipes, leave reviews. 
+My profile: For changing an username and a caption, that would include the users social media accounts for further connection
 
-Possible scaling?
-- Places and organizators will pay us to promote their place or their event
-- Growth: making it for all student towns in Slovenia -> Connection with Erasmus or similar networks -> Scaling it for more student towns in Europe
-
-APIs:
-- Spotify API
-- Google maps API
-- Slovenian websites APIs
 
