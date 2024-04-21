@@ -40,7 +40,17 @@ export class PostsService {
       .pipe(retry(1), catchError(this.handleError));
   }
 
+  public postPost(newPost: Post): Observable<any> {
+    console.log("Druga funkcija" + newPost.title);
+    const url: string = `${this.apiUrl}/events`;
+    return this.http
+        .post<any>(url, newPost)
+        .pipe(retry(1), catchError(this.handleError));
+  }
+
   private handleError(error: HttpErrorResponse) {
     return throwError(() => error.error.message || error.statusText);
   }
+
+
 }
