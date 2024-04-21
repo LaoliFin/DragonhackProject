@@ -1,8 +1,8 @@
 require('dotenv').config();
 const express = require('express');
-const session = require('express-session');
 const path = require('path');
 const app = express();
+const apiRouter = require('./api/routes/api.js');
 const cors = require("cors");
 
 
@@ -26,6 +26,7 @@ const port = process.env.PORT || 3000;
 
 // REST API
 // Router for all REST API urls '*'
+app.use('/', apiRouter);
 app.use(express.static(path.join(__dirname, "angular", "build")));
 
 app.get("*", (req, res) => {

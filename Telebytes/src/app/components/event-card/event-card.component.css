@@ -118,3 +118,11 @@ a:hover {
     content: "\2193"; 
     font-size: 20px;
 }
+
+.description {
+    color: white;
+}
+
+.arrow-container {
+    color: white;
+}

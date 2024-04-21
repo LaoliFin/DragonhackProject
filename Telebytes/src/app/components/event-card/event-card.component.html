@@ -21,39 +21,22 @@
     </div>
   </div>
 
-  <div class="row">
-    <!--<div class="col-md-6">-->
-    <div class="card your">
-      <h5 class="name">Name</h5>
-      <h6 class="info">Info</h6>
-      <p class="description">Here's some basic information about the event</p>
-      <div class="arrow-container">
-        <button class="arrow-button"></button>
-        <button class="arrow-button-down"></button>
-      </div>
-    </div>
-
-    <div class="card your">
-      <h5 class="name">Name</h5>
-      <h6 class="info">Info</h6>
-      <p class="description">Here's some basic information about the event</p>
-      <div class="arrow-container">
-        <button class="arrow-button"></button>
-        <button class="arrow-button-down"></button>
-      </div>
-    </div>
-    <div class="card your">
-      <h5 class="name">Name</h5>
-      <h6 class="info">Info</h6>
-      <p class="description">Here's some basic information about the event</p>
-      <div class="arrow-container">
-        <button class="arrow-button"></button>
-
-        <button class="arrow-button-down"></button>
-      </div>
-    </div>
-    <!--</div>-->
-  </div>
 
   <app-post></app-post>
+  
+  <div id="comment">
+    <button (click)="showForm()" id="add">ADD</button>
+    <div id="addText" [style.display]="isFormVisible ? 'block' : 'none'">
+      <!--<form (ngSubmit)="saveForm()">-->
+      <button type="button" id="cls" aria-label="Close" (click)="showForm()">
+        OK
+      </button>
+      <label for="commentName"></label>
+      <!--<input type="text" name="commentName" id="commentName" 
+					placeholder="Comment..." [ngModelOptions]="{ standalone: true }"
+					[(ngModel)]="newComment.name">-->
+
+      <!--</form>-->
+    </div>
+</div>
 </div>

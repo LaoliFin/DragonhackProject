@@ -1,15 +1,14 @@
-<div id="comment">
-    <button (click)="showForm()" id="add">ADD</button>
-    <div id="addText" [style.display]="isFormVisible ? 'block' : 'none'">
-      <!--<form (ngSubmit)="saveForm()">-->
-      <button type="button" id="cls" aria-label="Close" (click)="showForm()">
-        OK
-      </button>
-      <label for="commentName"></label>
-      <!--<input type="text" name="commentName" id="commentName" 
-					placeholder="Comment..." [ngModelOptions]="{ standalone: true }"
-					[(ngModel)]="newComment.name">-->
 
-      <!--</form>-->
+<div class="row" *ngFor="let post of posts">
+  <!--<div class="col-md-6">-->
+  <div class="card your">
+    <h5 class="name">{{ post.username }}</h5>
+    <h6 class="info">{{ post.title }}</h6>
+    <p class="description">{{ post.content }}</p>
+    <div class="arrow-container">
+      <button class="arrow-button-down" (click) = "increaseLikes(post._id)"></button>
+      {{ post.upvotes }}
+      <button class="arrow-button" (click) = "decreaseLikes(post._id)"></button>
     </div>
+  </div>
 </div>
