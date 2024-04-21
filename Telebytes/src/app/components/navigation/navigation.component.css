@@ -1,0 +1,19 @@
+.btn-primary {
+    background-color: #D8DCE2;
+    border: #D8DCE2;
+    color: black;
+}
+
+a.nav-link {
+    color: black;
+}
+
+#offcanvasExample.offcanvas.offcanvas-start {
+    background-color: #D8DCE2;
+}
+
+.btn-close {
+    background-color: #D8DCE2;
+    border: #D8DCE2;
+    color: black;
+}
