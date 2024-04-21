@@ -1,10 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
-import * as firebaseui from 'firebaseui';
-import { Subscription } from 'rxjs';
-import { EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 
 @Component({
@@ -14,20 +11,20 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class LoginComponent {
 
+  email:string =  '';
+  password:string ='';
+  loginForm: FormGroup = this.fb.group({
+    email: ['', [Validators.required, Validators.email]],
+    password:['', Validators.required],
+  });
+  
   constructor(
     private router: Router,
-    private snackBar: MatSnackBar
-    )
-  {
-  }
+    //private snackBar: MatSnackBar
+    private fb: FormBuilder,
+    ) {}
 
-  login() {
-    if (this.loginForm.valid) {
-      this.router.navigate(['/']);
-    }
-    else {
-      this.snackBar.open('Please fill in all required fields', 'Close', {
-        duration: 5000,
-      });}
+  public login() {
+    this.router.navigate(['/home']);
   }
-  }
+}

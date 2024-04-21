@@ -3,7 +3,7 @@
 		<div class="card-header">
 			LOG INTO EXISTING ACCOUNT
 		</div>
-		<form [formGroup]="loginForm" (ngSubmit)="login()">
+		<form>
 			<label class = "inputFields" for = "email">
 				Email:
 			</label>
@@ -12,8 +12,8 @@
 					class="inputFields"
 					name="email"
 					type="email"
+                    required
 					size="25"
-					required
 					tabindex="1"
 			>
 			<p></p>
@@ -23,7 +23,6 @@
 					name="password"
 					type="password"
 					size="25"
-					required
 					class="inputFields"
 					tabindex="2"
 			/>
@@ -33,6 +32,7 @@
 					id="login"
 					class="butt"
 					tabindex="3"
+                    (click) = "login()"
 				>
 					LOGIN
 				</button>
@@ -46,7 +46,7 @@
     <div class="card-header">
         CREATE A NEW ACCOUNT
     </div>
-    <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <form>
         <label class = "inputFields" for = "username">
             Username:
         </label>
@@ -56,7 +56,6 @@
                 name="username"
                 type="text"
                 size="25"
-                required
                 tabindex="4"
         >
         <p></p>
@@ -69,7 +68,6 @@
                 name="email"
                 type="email"
                 size="25"
-                required
                 tabindex="5"
         >
         <p></p>
@@ -81,7 +79,6 @@
                 name="password"
                 type="password"
                 size="25"
-                required
                 class="inputFields"
                 tabindex="6"
         />
@@ -91,6 +88,7 @@
                     id="register"
                     class="butt"
                     tabindex="3"
+                    (click) = "login()"
             >
                 REGISTER
             </button>

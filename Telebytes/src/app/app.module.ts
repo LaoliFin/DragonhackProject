@@ -35,6 +35,7 @@ import { LoginComponent } from './components/login/login.component';
       { path: "culture", component: CultureComponent },
       { path: "eventpage", component: EventPageComponent },
       { path: "loginregister", component: LoginComponent },
+      { path: "home", component: HomepageComponent },
     ]),
     OAuthModule.forRoot(),
     HttpClientModule,
