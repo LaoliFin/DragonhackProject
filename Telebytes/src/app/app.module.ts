@@ -14,6 +14,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { OAuthModule } from 'angular-oauth2-oidc';
 import { LoginComponent } from './components/login/login.component';
 import { MusicComponent } from './components/music/music.component';
+import { LanguageComponent } from './components/language/language.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MusicComponent } from './components/music/music.component';
     EventPageComponent,
     EventCardComponent,
     LoginComponent,
-    MusicComponent
+    MusicComponent,
+    LanguageComponent
   ],
   imports: [
     BrowserModule,
@@ -35,10 +37,11 @@ import { MusicComponent } from './components/music/music.component';
     RouterModule.forRoot([
       { path: "", component: HomepageComponent },
       { path: "culture", component: CultureComponent },
-      { path: "eventpage", component: EventPageComponent },
+      { path: "events", component: EventPageComponent },
       { path: "loginregister", component: LoginComponent },
       { path: "home", component: HomepageComponent },
       { path: "music", component: MusicComponent },
+      { path: "language", component: LanguageComponent },
     ]),
     OAuthModule.forRoot(),
     HttpClientModule,
