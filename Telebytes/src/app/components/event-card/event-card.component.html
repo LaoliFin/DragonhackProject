@@ -26,17 +26,16 @@
   
   <div id="comment">
     <button (click)="showForm()" id="add">ADD</button>
-    <div id="addText" [style.display]="isFormVisible ? 'block' : 'none'">
-      <!--<form (ngSubmit)="saveForm()">-->
-      <button type="button" id="cls" aria-label="Close" (click)="showForm()">
-        OK
-      </button>
-      <label for="commentName"></label>
-      <!--<input type="text" name="commentName" id="commentName" 
-					placeholder="Comment..." [ngModelOptions]="{ standalone: true }"
-					[(ngModel)]="newComment.name">-->
-
-      <!--</form>-->
+    <div id="addText"> <!--[style.display]="isFormVisible ? 'block' : 'none'-->
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" class="form-control" ngModel name="newPost.title" required>
+        </div>
+        <div class="form-group">
+          <label for="content">Content:</label>
+          <textarea id="content" class="form-control" ngModel name="newPost.content" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" (click) = "postComment()">Create Post</button>
     </div>
 </div>
 </div>

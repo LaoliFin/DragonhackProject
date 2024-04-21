@@ -44,9 +44,29 @@ const minusLikes = async(req, res) => {
     }
 };
 
+const postPost = async (req, res) => {
+    console.log(req.body.title);
+        try {
+            const newPost = new PostModel({
+                category: "Dogodki",
+                title: req.body.title,
+                content: req.body.content,
+                username: "Tinky-Winky"
+            });
+
+            console.log(newPost);
+            await newPost.save();
+            res.status(201).send({ message: 'Post created', event: newPost });
+        }
+        catch (error) {
+            return res.status(500).send({ message: "Error creating post", error: error.toString() });
+        }
+};
+
 
 module.exports = {
     displayEventPosts,
     plusLikes,
     minusLikes,
+    postPost,
 };
