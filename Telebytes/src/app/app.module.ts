@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { OgrodjeComponent } from './components/ogrodje/ogrodje.component';
 import { EventPageComponent } from './components/event-page/event-page.component';
@@ -10,6 +11,8 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 //import { AgmCoreModule } from '@agm/core';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { OAuthModule } from 'angular-oauth2-oidc';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,8 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     NavigationComponent,
     CultureComponent,
     EventPageComponent,
-    EventCardComponent
+    EventCardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,10 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
       { path: "", component: HomepageComponent },
       { path: "culture", component: CultureComponent },
       { path: "eventpage", component: EventPageComponent },
+      { path: "loginregister", component: LoginComponent },
     ]),
+    OAuthModule.forRoot(),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [ OgrodjeComponent ]
