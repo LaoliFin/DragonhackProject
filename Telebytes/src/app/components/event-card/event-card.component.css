@@ -3,18 +3,22 @@
     height: 30%;
     width: 30%;
     margin-top: 4%;
-    
     padding: 4%;
     border-radius: 15px;
     background-color: #9FB1D1;
 }
 
+.row{
+    width: 150%;
+    margin-right: 2%;
+}
+
 .our {
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 .your {
-    margin-left: 15%;
+   margin-right: 3%;
 }
 
 #formContainer {
@@ -25,16 +29,16 @@
 #comment {
     height: 50%;
     width: 50%;
-    margin-left: 75%;
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-left: -1%;
     border-radius: 10px;
 }
 #add {
     height: 10%;
     width: 10%;
     border-radius: 20px;
-    border-color: #D8DCE2;
-    background-color: #D8DCE2;
+    border-color: #9FB1D1;
+    background-color: #9FB1D1;
 }
 #addText {
     height: 100%;
