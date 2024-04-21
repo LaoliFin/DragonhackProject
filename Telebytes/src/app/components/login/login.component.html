@@ -3,7 +3,7 @@
 		<div class="card-header">
 			LOG INTO EXISTING ACCOUNT
 		</div>
-		<form action="#" method="get" autocomplete="on">
+		<form [formGroup]="loginForm" (ngSubmit)="login()">
 			<label class = "inputFields" for = "email">
 				Email:
 			</label>
@@ -46,7 +46,7 @@
     <div class="card-header">
         CREATE A NEW ACCOUNT
     </div>
-    <form action="#" method="get" autocomplete="on">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
         <label class = "inputFields" for = "username">
             Username:
         </label>
