@@ -1,11 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
 
-html, body { height: 100%; }
 body { 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
     background-color: #D8DCE2;
+    background-image: url('assets/img/background.png'); /* Path to your background image */
+    background-repeat:repeat; /* Prevent image from repeating */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
 }
 
 .card {
     background-color: #D8DCE2;
 }
+
