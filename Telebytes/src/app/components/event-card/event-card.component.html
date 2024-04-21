@@ -1,31 +1,76 @@
 <div class="container">
-	<div class="row">
-		<div class="col-md-6">
-			<div class="card our">
-				<h5 class="name">Name</h5>
-				<h6 class="info">Info</h6>
-				<p class="description">Here's some basic information about the event</p>
-				<h5 class="name">Name</h5>
-				<h6 class="info">Info</h6>
-				<p class="description">Here's some basic information about the event</p>
-				<h5 class="name">Name</h5>
-				<h6 class="info">Info</h6>
-				<p class="description">Here's some basic information about the event</p>
-			</div>
-		</div>
+  <div class="row">
+    <div class="col-md-6" *ngFor="let event of events">
+      <div class="card our">
+        <h5 class="name">{{ event.title }}</h5>
+        <h6 class="info">{{ event.date }} - {{ event.location }}</h6>
 
-		<div class="col-md-6">
-			<div class = "card your">
-				<h5 class="name">Name</h5>
-				<h6 class="info">Info</h6>
-				<p class="description">Here's some basic information about the event</p>
-				<h5 class="name">Name</h5>
-				<h6 class="info">Info</h6>
-				<p class="description">Here's some basic information about the event</p>
-				<h5 class="name">Name</h5>
-				<h6 class="info">Info</h6>
-				<p class="description">Here's some basic information about the event</p>
-			</div>
-		</div>
-	</div>
+        <!-- Conditional display for eventname_raw -->
+        <h5 class="name" *ngIf="event.eventname_raw">
+          {{ event.eventname_raw }}
+        </h5>
+
+        <!-- Conditional display for display_time_label -->
+        <h6 class="info" *ngIf="event.display_time_label">
+          {{ event.display_time_label }} -
+        </h6>
+
+        <!-- Default description -->
+        <p class="description">Here's some basic information about the event</p>
+
+        <!-- Conditional display for link -->
+        <a [href]="event.link" *ngIf="event.link" target="_blank">More Info</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--<div class="col-md-6">-->
+    <div class="card your">
+      <h5 class="name">Name</h5>
+      <h6 class="info">Info</h6>
+      <p class="description">Here's some basic information about the event</p>
+      <div class="arrow-container">
+        <button class="arrow-button"></button>
+        <button class="arrow-button-down"></button>
+      </div>
+    </div>
+
+    <div class="card your">
+      <h5 class="name">Name</h5>
+      <h6 class="info">Info</h6>
+      <p class="description">Here's some basic information about the event</p>
+      <div class="arrow-container">
+        <button class="arrow-button"></button>
+        <button class="arrow-button-down"></button>
+      </div>
+    </div>
+    <div class="card your">
+      <h5 class="name">Name</h5>
+      <h6 class="info">Info</h6>
+      <p class="description">Here's some basic information about the event</p>
+      <div class="arrow-container">
+        <button class="arrow-button"></button>
+
+        <button class="arrow-button-down"></button>
+      </div>
+    </div>
+    <!--</div>-->
+  </div>
+
+  <div id="comment">
+    <button (click)="showForm()" id="add">ADD</button>
+    <div id="addText" [style.display]="isFormVisible ? 'block' : 'none'">
+      <!--<form (ngSubmit)="saveForm()">-->
+      <button type="button" id="cls" aria-label="Close" (click)="showForm()">
+        OK
+      </button>
+      <label for="commentName"></label>
+      <!--<input type="text" name="commentName" id="commentName" 
+					placeholder="Comment..." [ngModelOptions]="{ standalone: true }"
+					[(ngModel)]="newComment.name">-->
+
+      <!--</form>-->
+    </div>
+  </div>
 </div>
