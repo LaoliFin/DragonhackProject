@@ -1,19 +1,89 @@
 /*to bo za our tip card*/
 .card{
-    height: 90%;
-    width: 40%;
+    height: 30%;
+    width: 30%;
     margin-top: 4%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 2%;
+    
+    padding: 4%;
+    border-radius: 15px;
+    background-color: #9FB1D1;
 }
 
 .our {
-    margin-right: 50%;
-    
+    margin-right: 5%;
 }
 
 .your {
-    margin-left: 50%;
-   
+    margin-left: 15%;
+}
+
+#formContainer {
+    display: none;
+    margin-top: 4%;
+}
+
+#comment {
+    height: 50%;
+    width: 50%;
+    margin-left: 75%;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+#add {
+    height: 10%;
+    width: 10%;
+    border-radius: 20px;
+    border-color: #D8DCE2;
+    background-color: #D8DCE2;
+}
+#addText {
+    height: 100%;
+    width: 50%;
+    background-color: #9FB1D1;
+    border-radius: 10px;
+}
+
+#cls{
+    background-color: #9FB1D1;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.arrow-button {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #9FB1D1;
+    
+}
+
+.arrow-button:hover {
+    background-color: #D8DCE2;
+}
+
+.arrow-button::after {
+    content: "\2191"; /* Unicode for up arrow */
+    font-size: 20px;
+}
+
+.arrow-button-down:hover {
+    background-color: #D8DCE2;
+}
+
+.arrow-button-down {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 2%;
+    background-color: #9FB1D1;
+}
+
+
+
+.arrow-button-down::after {
+    content: "\2193"; 
+    font-size: 20px;
 }
