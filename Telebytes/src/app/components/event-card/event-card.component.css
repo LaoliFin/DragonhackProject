@@ -1,7 +1,7 @@
 /*to bo za our tip card*/
 .card{
-    height: 90%;
-    width: 40%;
+    height: 100%;
+    width: 50%;
     margin-top: 4%;
     margin-left: 5%;
     margin-right: 5%;
@@ -9,13 +9,12 @@
 }
 
 .our {
-    margin-right: 50%;
+    margin-right: 20%;
     
 }
 
 .your {
-    margin-left: 50%;
-   
+    margin-left: 15%;
 }
 
 #formContainer {
@@ -23,17 +22,68 @@
     margin-top: 4%;
 }
 
-.comment {
+#comment {
     height: 50%;
     width: 50%;
+    margin-left: 75%;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+#add {
+    height: 10%;
+    width: 10%;
+    border-radius: 20px;
+    border-color: white;
+    background-color: white;
+}
+#addText {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
 }
 
-#addText {
-    height: 80%;
-    width: 80%;
+#cls{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.arrow-button {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #D8DCE2;
+    
+}
+
+.arrow-button:hover {
     background-color: white;
 }
 
-#btn-close {
-    margin-bottom: 50%;
+.arrow-button::after {
+    content: "\2191"; /* Unicode for up arrow */
+    font-size: 20px;
+}
+
+.arrow-button-down:hover {
+    background-color: white;
+}
+
+.arrow-button-down {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 2%;
+    background-color: #D8DCE2;
+}
+
+
+
+.arrow-button-down::after {
+    content: "\2193"; 
+    font-size: 20px;
 }
