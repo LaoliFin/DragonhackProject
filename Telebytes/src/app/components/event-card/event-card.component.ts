@@ -7,7 +7,7 @@ import { EventService } from '../../services/event.service';
   styleUrls: ['./event-card.component.css']
 })
 
-export class EventComponent implements OnInit {
+export class EventCardComponent implements OnInit {
   events: any[] = [];
   isFormVisible: boolean = false; 
 
