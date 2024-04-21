@@ -13,7 +13,6 @@ if (process.env.NODE_ENV === "production") {
 
 //mongodb+srv://tele:<tele>@telebytes.vaczzy9.mongodb.net/
 mongoose.connect(dbURI);
-
 mongoose.connection.on("connected", () =>
     console.log(`Mongoose connected to ${dbURI}.`)
 );

@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { EventService } from '../../services/event.service';
 
 @Component({
   selector: 'event-card',
@@ -7,22 +7,29 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./event-card.component.css']
 })
 
-export class EventCardComponent {
-  isFormVisible: boolean = false;
-  textInputValue: string= '';
+export class EventComponent implements OnInit {
+  events: any[] = [];
+  isFormVisible: boolean = false; 
 
-  @ViewChild('myForm') myForm!: NgForm;
+  constructor(private eventService: EventService) { }
 
-  showForm() {
-    var x: any = document.getElementById("addText");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-}
+  ngOnInit(): void {
+    this.fetchEvents();
+  }
 
-  saveForm() {
-    this.isFormVisible = false;
+  fetchEvents(): void {
+    this.eventService.getEvents().subscribe({
+      next:(data) => {
+        this.events = data;
+      },
+      error:(error) => {
+        console.error('Error fetching events:', error);
+      }
+    });
+  }
+
+  showForm(): void { 
+    this.isFormVisible = !this.isFormVisible;
   }
 }
+
