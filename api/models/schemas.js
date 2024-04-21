@@ -67,6 +67,10 @@ const postSchema = new mongoose.Schema({
         type: String,
         required: [true, "Username is required!"]
         // The name of the user to be shown on the post
+    },
+    upvotes: {
+        type: Number,
+        default: 0  // Initial number of upvotes
     }
 });
 

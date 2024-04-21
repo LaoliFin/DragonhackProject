@@ -16,6 +16,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { LoginComponent } from './components/login/login.component';
 import { MusicComponent } from './components/music/music.component';
 import { LanguageComponent } from './components/language/language.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { LanguageComponent } from './components/language/language.component';
     EventCardComponent,
     LoginComponent,
     MusicComponent,
-    LanguageComponent
+    LanguageComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
