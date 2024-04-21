@@ -15,9 +15,6 @@
           {{ event.display_time_label }} -
         </h6>
 
-        <!-- Default description -->
-        <p class="description">Here's some basic information about the event</p>
-
         <!-- Conditional display for link -->
         <a [href]="event.link" *ngIf="event.link" target="_blank">More Info</a>
       </div>

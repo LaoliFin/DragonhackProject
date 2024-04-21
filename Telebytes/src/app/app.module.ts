@@ -11,7 +11,6 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 //import { AgmCoreModule } from '@agm/core';
 //import { LeafletModule } from '@asymmetrik/ngx-leaflet';
-import { OAuthModule } from 'angular-oauth2-oidc';
 import { LoginComponent } from './components/login/login.component';
 import { MusicComponent } from './components/music/music.component';
 import { LanguageComponent } from './components/language/language.component';
@@ -46,7 +45,6 @@ import { PostComponent } from './components/post/post.component';
       { path: "music", component: MusicComponent },
       { path: "language", component: LanguageComponent },
     ]),
-    OAuthModule.forRoot(),
     HttpClientModule,
   ],
   providers: [],
