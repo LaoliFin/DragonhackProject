@@ -1,19 +1,43 @@
-.btn-primary {
-    background-color: #D8DCE2;
-    border: #D8DCE2;
+#navigation {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: #d8dce2;
+    z-index: 1;
+}
+
+.nav-item {
+    border-radius: 10px;
+    background-color: #9fb1d1;
+	color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn, #button {
+	border-radius: 10px;
+    background-color: #9fb1d1;
+	color: black;
+	font-weight: bold;
+    transition: 0.2s;
+	outline: none;
+}
+
+.nav-item a {
     color: black;
 }
 
-a.nav-link {
-    color: black;
+.nav-item:hover, .btn:hover {
+    background-color: #14233d;
 }
 
-#offcanvasExample.offcanvas.offcanvas-start {
-    background-color: #D8DCE2;
+.nav-item:hover a , .btn:hover{
+    color: white;
 }
 
-.btn-close {
-    background-color: #D8DCE2;
-    border: #D8DCE2;
-    color: black;
+.nav-item:enabled {
+    background-color: #14233d;
 }
+
