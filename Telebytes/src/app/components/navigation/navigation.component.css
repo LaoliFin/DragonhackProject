@@ -1,3 +1,10 @@
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
 #navigation {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
@@ -14,6 +21,7 @@
     margin-right: 10px;
     font-weight: bold;
     transition: 0.2s;
+    font-family: "Kanit", sans-serif; /* Applying Kanit font */
 }
 
 .btn, #button {
