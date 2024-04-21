@@ -1,21 +1,22 @@
 /* styles.css or your component-specific CSS file */
-
 .container {
-    position: relative; /* Ensure positioning context */
+    position: relative;  
     width: 100%;
-    height: 80%;
-    background-color: rgba(159, 177, 209, 0.5);
+    height: 100%;
+    text-align: center;
   }
 
-  #aboutUs.card {
-   background-color: rgba(159, 177, 209, 0.5);
-   padding: 15px;
-   
-  }
-  .text-container {
-    position: relative;
-    margin-top: -55%; /* Adjust as needed */
-    margin-left: 40%; /* Adjust as needed */
+#slika {
+    width:  100%;
+    height: 100%;
+
+}
+
+.text-container {
+    position: absolute;
+    top: 700%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
     font-size: 80px;
     color: white;
     border-radius: 5px;
@@ -24,6 +25,14 @@
     font-style: normal;
     
   }
+  #aboutUs.card {
+    width: 50%;
+    background-color: rgba(159, 177, 209, 0.5);
+    padding: 15px;
+    position: relative;
+    margin-left: 30%;
+  }
+  
 
   #aboutUs {
     position: relative;
@@ -31,6 +40,10 @@
   }
 
   h2 {
+    margin-left: 40%;
+  }
+
+  h3 {
     margin-left: 50%;
   }
 

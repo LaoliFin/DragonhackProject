@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common'; 
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { OgrodjeComponent } from './components/ogrodje/ogrodje.component';
@@ -31,6 +33,8 @@ import { PostComponent } from './components/post/post.component';
   ],
   imports: [
     BrowserModule,
+    //BrowserAnimationsModule,
+    CommonModule,
     HttpClientModule,  // Add this line
     //LeafletModule,
     /*AgmCoreModule.forRoot({
