@@ -1,0 +1,99 @@
+<div id="loginCard" class = "card">
+	<div id="firebaseui-auth-container" class="auth-container">
+		<div class="card-header">
+			LOG INTO EXISTING ACCOUNT
+		</div>
+		<form action="#" method="get" autocomplete="on">
+			<label class = "inputFields" for = "email">
+				Email:
+			</label>
+			<input
+					id = "email"
+					class="inputFields"
+					name="email"
+					type="email"
+					size="25"
+					required
+					tabindex="1"
+			>
+			<p></p>
+			<label class = "inputFields" for = "password"> Password: </label>
+			<input
+					id="password"
+					name="password"
+					type="password"
+					size="25"
+					required
+					class="inputFields"
+					tabindex="2"
+			/>
+			<div class="card-footer">
+				<button
+					type="submit"
+					id="login"
+					class="butt"
+					tabindex="3"
+				>
+					LOGIN
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- REGISTER uporabnika -->
+<div id="registerCard" class = "card">
+    <div class="card-header">
+        CREATE A NEW ACCOUNT
+    </div>
+    <form action="#" method="get" autocomplete="on">
+        <label class = "inputFields" for = "username">
+            Username:
+        </label>
+        <input
+                id = "username"
+                class="inputFields"
+                name="username"
+                type="text"
+                size="25"
+                required
+                tabindex="4"
+        >
+        <p></p>
+        <label class = "inputFields" for = "newEmail">
+            Email:
+        </label>
+        <input
+                id = "newEmail"
+                class="inputFields"
+                name="email"
+                type="email"
+                size="25"
+                required
+                tabindex="5"
+        >
+        <p></p>
+        <label class = "inputFields" for = "newPassword">
+            Password:
+        </label>
+        <input
+                id="newPassword"
+                name="password"
+                type="password"
+                size="25"
+                required
+                class="inputFields"
+                tabindex="6"
+        />
+        <div class="card-footer">
+            <button
+                    type="submit"
+                    id="register"
+                    class="butt"
+                    tabindex="3"
+            >
+                REGISTER
+            </button>
+        </div>
+    </form>
+</div>
